@@ -1,5 +1,5 @@
 import styled from 'styled-components/native';
-import {getStatusBarHeight} from 'react-native-iphone-x-helper';
+import { getStatusBarHeight } from 'react-native-iphone-x-helper';
 
 export const Container = styled.View`
   flex: 1;
@@ -18,8 +18,8 @@ export const CardsContainer = styled.ScrollView.attrs({
   showsHorizontalScrollIndicator: false,
 })`
   position: absolute;
-  height: 300px;
+  height: 340px;
   left: 0;
   right: 0;
-  top: 0;
+  top: 0px;
 `;
