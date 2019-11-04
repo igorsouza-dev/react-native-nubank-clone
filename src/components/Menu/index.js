@@ -12,7 +12,7 @@ import {
   SignOutButtonText,
 } from './styles';
 
-export default function Menu({translateY}) {
+export default function Menu({ translateY }) {
   return (
     <Container
       style={{
@@ -20,11 +20,12 @@ export default function Menu({translateY}) {
           inputRange: [0, 150],
           outputRange: [0, 1],
         }),
-      }}>
+      }}
+    >
       <Code>
         <QRCode
           value="https://github.com/igorsouza-dev/"
-          size={80}
+          size={60}
           backgroundColor="transparent"
           color="#8b10ae"
         />

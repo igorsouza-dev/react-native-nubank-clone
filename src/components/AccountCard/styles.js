@@ -15,6 +15,7 @@ export const CardHeader = styled.View`
   align-items: center;
   padding: 30px;
 `;
+export const CardHeaderButton = styled.TouchableOpacity``;
 
 export const CardContent = styled.View`
   flex: 1;
@@ -35,7 +36,10 @@ export const Title = styled.Text`
 export const Description = styled.Text`
   font-size: 32px;
   margin-top: 3px;
-  color: #333;
+  color: ${props => (props.isVisible ? '#333' : '#ccc')};
+  background: ${props => (props.isVisible ? 'transparent' : '#ccc')};
+  border-radius: 4px;
+  padding: 2px;
 `;
 export const Annotation = styled.Text`
   font-size: 12px;
